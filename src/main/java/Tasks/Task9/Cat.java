@@ -1,5 +1,7 @@
 package Tasks.Task9;
 
+import java.util.Objects;
+
 public class Cat {
 
     private String name;
@@ -14,7 +16,7 @@ public class Cat {
         return name;
     }
 
-    public void setName(String name){
+    private void setName(String name){
         this.name = name;
     }
 
@@ -22,8 +24,20 @@ public class Cat {
         return color;
     }
 
-    public void setColor(String color){
+    private void setColor(String color){
         this.color = color;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cat cat = (Cat) o;
+        return Objects.equals(name, cat.name) && Objects.equals(color, cat.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, color);
+    }
 }

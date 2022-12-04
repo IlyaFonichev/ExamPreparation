@@ -1,5 +1,7 @@
 package Tasks.Task7;
 
+import java.util.Arrays;
+
 public class Address {
 
     private String name;
@@ -56,22 +58,14 @@ public class Address {
         this.flat = flat;
     }
 
-    enum City{
-        Moscow,
-        Bryansk,
-        Vologda,
-        Voronezh,
-        Luga,
-        Samara,
-        SaintPetersburg,
-        Surgut
-    }
+
 
     public static void main(String[] args){
-
+        City[] myCity = City.values();
         Address my = new Address("Илья", "Долгоозераная", 7, 3, 49);
         Address Andrew = new Address("Андрей", "Академика Байкова", 8, 3, 245);
         Address Anton = new Address("Антон", "Комендантский проспект", 9, 2, 99);
+        System.out.println();
         System.out.println(my);
         System.out.println(Andrew);
         System.out.println(Anton);

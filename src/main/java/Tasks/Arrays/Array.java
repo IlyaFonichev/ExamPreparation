@@ -63,6 +63,17 @@ public class Array {
         int[] sixthArray = {2,4,6,8,1,3,5,7,9};
         Arrays.sort(sixthArray);
         System.out.println(Arrays.toString(sixthArray));
+
+        // Задача 7. Напишите функцию, которая возвращает как минимальное, так и максимальное число из заданного списка / массива.
+//        int[] arr = {2,4,6,8,1,3,5,7,9};
+//        int[] arr1 = new int[0];
+//        int min = 0;
+//        int max = 0;
+//        for (int i : arr){
+//            min = Math.min(min, i);
+//            arr1 = min;
+//        }
+//        return arr1;
     }
 
 }

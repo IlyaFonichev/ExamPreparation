@@ -4,10 +4,12 @@ public class Products {
 
     private String name;
     private int price;
+    //List<Products> product;
 
     public Products(String name, int price){
         this.name = name;
         this.price = price;
+        //this.product = new ArrayList<>();
     }
 
     public String getName(){

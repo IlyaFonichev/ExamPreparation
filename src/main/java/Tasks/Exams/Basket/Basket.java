@@ -1,4 +1,4 @@
-package Tasks.Exams.FirstTask;
+package Tasks.Exams.Basket;
 
 import java.util.*;
 
@@ -8,6 +8,7 @@ public class Basket {
         ArrayList<Products> basket = new ArrayList<>();
         addProduct(basket, 3, "Молоко", 62);
         addProduct(basket, 4, "Яйца", 89);
+        addProduct(basket, 5, "Хлеб", 75);
         delProducts(basket, "Молоко");
         System.out.println(sum(basket));
     }

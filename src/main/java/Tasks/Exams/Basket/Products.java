@@ -1,4 +1,4 @@
-package Tasks.Exams.FirstTask;
+package Tasks.Exams.Basket;
 
 public class Products {
 
@@ -27,4 +27,5 @@ public class Products {
     public void setPrice(int price) {
         this.price = price;
     }
+
 }

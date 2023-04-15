@@ -14,8 +14,8 @@ public class Basket {
 
     public static double basketSum(ArrayList<Product> basket){
         double summ = 0;
-        for (int i = 0; i < basket.size(); i++){
-            summ += basket.get(i).getPrice();
+        for (Product product : basket){
+            summ += product.getPrice();
         }
         return summ;
     }

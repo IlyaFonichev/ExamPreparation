@@ -23,7 +23,12 @@ public class Library {
 
     public static void delBooks(List<Books> library, String titleOfBook, int count){
         for (int i = 0; i < count; i++){
-            library.removeIf(booksOfLibrary -> Objects.equals(booksOfLibrary.getNameBook(), titleOfBook));
+            for (int j = 0; j < library.size(); j++){
+                if (library.get(i).getNameBook().equals(titleOfBook)){
+                    library.remove(i);
+                    break;
+                }
+            }
         }
     }
 

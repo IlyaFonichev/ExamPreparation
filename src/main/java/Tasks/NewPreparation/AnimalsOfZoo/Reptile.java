@@ -4,9 +4,8 @@ public class Reptile extends Animal{
 
     private int numberOfPaws;
 
-    public Reptile(AnimalType animalType, String name, int age, double weight, int numberOfPaws){
+    public Reptile(AnimalType animalType, String name, int age, double weight){
         super(animalType, name, age, weight);
-        this.numberOfPaws = numberOfPaws;
     }
 
     public int getNumberOfPaws(){

@@ -4,9 +4,8 @@ public class Mammal extends Animal{
 
     private int udderQuantity;
 
-    public Mammal(AnimalType animalType, String name, int age, double weight, int udderQuantity){
+    public Mammal(AnimalType animalType, String name, int age, double weight){
         super(animalType, name, age, weight);
-        this.udderQuantity = udderQuantity;
     }
 
     public int getUdderQuant(){

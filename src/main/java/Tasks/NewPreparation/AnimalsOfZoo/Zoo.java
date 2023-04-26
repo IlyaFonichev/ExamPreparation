@@ -15,4 +15,12 @@ public class Zoo {
 
     }
 
+    public static void delAnimal(String name){
+        for (int i = 0; i < zoo.size(); i++){
+            if (zoo.get(i).getName().equals(name)){
+                zoo.remove(i);
+            }
+        }
+    }
+
 }

@@ -1,6 +1,6 @@
 package Tasks.NewPreparation.Shape;
 
-public class Quadrant {
+public abstract class Quadrant implements Shape{
 
     private double x;
 

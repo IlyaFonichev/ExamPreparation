@@ -2,8 +2,8 @@ package Tasks.NewPreparation;
 
 // определение интерфейса Shape
 interface Shapes {
-    public double getArea();
-    public double getPerimeter();
+    double getArea();
+    double getPerimeter();
 }
 
 // реализация интерфейса Shape для круга

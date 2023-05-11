@@ -1,10 +1,11 @@
 package Tasks.OneDayBeforeDeath.GroupV2;
 import java.util.*;
 
-public class GroupV2 {
+public abstract class GroupV2 implements Groups{
     public static void addStudent(List<StudentV2> group, String name, int age, Sex sex){
         group.add(new StudentV2(name, age, sex));
     }
+
 
     public static void delStudent(List<StudentV2> group, String name){
         for (int i = 0; i < group.size(); i++){

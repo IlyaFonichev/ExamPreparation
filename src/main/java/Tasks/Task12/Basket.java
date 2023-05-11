@@ -4,10 +4,10 @@ import java.util.*;
 
 public class Basket{
 
-    public static void addProduct(List<Product> basket, String name, String article, double price, int count){
-        for (int i = 0; i < count; i++){
+    public static void addProduct(List<Product> basket, String name, String article, double price){
+
             basket.add(new Product(name, article, price));
-        }
+
     }
 
     public static void delProduct(List<Product> basket, String name, String article){
@@ -32,9 +32,9 @@ public class Basket{
 
         List<Product> basket = new ArrayList<>();
 
-        addProduct(basket, "Джинсы", "1864164", 2499.90, 3);
-        addProduct(basket, "Худи", "6541468", 3540, 7);
-        addProduct(basket, "Телефон", "2468464", 16464.59, 1);
+        addProduct(basket, "Джинсы", "1864164", 2499.90);
+        addProduct(basket, "Худи", "6541468", 3540);
+        addProduct(basket, "Телефон", "2468464", 16464.59);
         delProduct(basket, "Телефон", "2468464");
 
         System.out.println(basket);

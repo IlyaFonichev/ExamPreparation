@@ -2,7 +2,7 @@ package Tasks.OneDayBeforeDeath.GroupV2;
 import java.util.*;
 
 public class GroupV2 {
-    public static void addStudent(List<StudentV2> group, String name, int age, String sex){
+    public static void addStudent(List<StudentV2> group, String name, int age, Sex sex){
         group.add(new StudentV2(name, age, sex));
     }
 
@@ -17,7 +17,7 @@ public class GroupV2 {
     public static int sumMale(List<StudentV2> group) {
         int count = 0;
         for (int i = 0; i < group.size(); i++) {
-            if (group.get(i).getSex().equals("male")){
+            if (group.get(i).getSex().equals(Sex.male)){
                 count += 1;
             }
         }
@@ -27,7 +27,7 @@ public class GroupV2 {
     public static int sumFemale(List<StudentV2> group){
         int count = 0;
         for (int i = 0; i < group.size(); i++){
-            if (group.get(i).getSex().equals("female")){
+            if (group.get(i).getSex().equals(Sex.female)){
                 count += 1;
             }
         }
@@ -44,10 +44,10 @@ public class GroupV2 {
 
     public static void main(String[] args){
         List<StudentV2> group = new ArrayList<>();
-        addStudent(group, "Andrey", 19, "male");
-        addStudent(group, "Ilya", 19, "male");
-        addStudent(group, "Vika", 19, "female");
-        addStudent(group, "Julia", 20, "female");
+        addStudent(group, "Andrey", 19, Sex.male);
+        addStudent(group, "Ilya", 19, Sex.male);
+        addStudent(group, "Vika", 19, Sex.female);
+        addStudent(group, "Julia", 20, Sex.female);
         delStudent(group, "Andrey");
         System.out.println(group);
         System.out.println(sumMale(group));

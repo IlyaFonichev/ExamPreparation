@@ -6,10 +6,10 @@ public class StudentV2{
 
     private String name;
     private int age;
-    private String sex;
+    private Sex sex;
     List<StudentV2> groupV2;
 
-    public StudentV2(String name, int age, String sex){
+    public StudentV2(String name, int age, Sex sex){
         this.name = name;
         this.age = age;
         this.sex = sex;
@@ -24,14 +24,14 @@ public class StudentV2{
         return age;
     }
 
-    public String getSex(){
+    public Sex getSex(){
         return sex;
     }
 
     @Override
     public String toString(){
         return "\n Студент: " + getName() +
-                ", возраст: " + getAge() + ", пол: " + getSex();
+                ", возраст: " + getAge() + ", пол: " + getSex().getType();
     }
 }
 
